@@ -14,6 +14,7 @@ import { StyledComponentsDemo } from './styled-components.jsx';
 import { EmotionDemo } from './emotion.jsx';
 import { ReactJssDemo } from './react-jss.jsx';
 import { LazyLoadDemo } from './lazy-load.jsx';
+import BlogPosts from "./BlogPosts/BlogPosts.jsx";
 
 class Navbar extends Component {
 	render() {
@@ -63,6 +64,7 @@ export default class HomeComponent extends Component {
 					<h1 className="display-4">.NET Core Sample</h1>
 					<Navbar />
 					<hr className="my-4" />
+					<BlogPosts />
 					<Switch>
 						<Route
 							exact
