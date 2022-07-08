@@ -3,6 +3,7 @@ Practicing creating a ReactJS.Net Application
 
 Basic spec:
 -Your site must have a home page that lists all the blog posts.
+
 -Your site must have a page to allow a logged in user to create a blog post.
 -Your site must have a page to allow a blog posts author to edit a blog post.
 -Only a blog posts author should be able to edit a blog post.
