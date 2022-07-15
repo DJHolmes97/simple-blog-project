@@ -6,6 +6,8 @@ export const BlogPost = styled.div`
   flex-direction: column;
   padding: 3%;
   margin: 0 2%;
+  width: 30%;
+  height: 800px;
 `;
 
 export const Heading = styled.h1`
@@ -13,9 +15,14 @@ export const Heading = styled.h1`
   text-align: center;
   display: flex;
   align-items: center;
+  font-size: 8vw;
 `;
 
+export const Excerpt = styled.p`
+  font-size: 2vw;
+`
+
 export const Image = styled.img`
-  width: 100%;
-  height: 210px;
+  max-width: 100%;
+  height: auto;
 `;

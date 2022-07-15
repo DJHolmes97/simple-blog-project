@@ -18,8 +18,8 @@ const BlogPosts = () => {
             author: "Nishant Singh ",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/diving-into-excel-thumbnail.png",
-            createdDate: "2014-03-12T13:37:27+00:00",
-            lastUpdatedDate: "2014-03-12T13:37:27+00:00"
+            createdDate: "2012-04-23T18:25:43.511Z",
+            lastUpdatedDate: "2012-04-23T18:25:43.511Z"
         },
         {
             id: 1,
@@ -29,8 +29,8 @@ const BlogPosts = () => {
             author: "Daniel Holmes",
             imgUrl:
                 "https://media.geeksforgeeks.org/img-practice/banner/coa-gate-2022-thumbnail.png",
-            createdDate: "2015-05-12T13:37:27+00:00",
-            lastUpdatedDate: "2015-06-12T13:37:27+00:00"
+            createdDate: "2012-04-23T18:25:43.511Z",
+            lastUpdatedDate: "2012-04-23T18:25:43.511Z"
         },
         {
             id: 2,
@@ -43,8 +43,8 @@ const BlogPosts = () => {
             author: "ReactJS.org",
             imgUrl:
                 "https://res.cloudinary.com/practicaldev/image/fetch/s--6mhX1C7u--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7vx1ntk1reuhqo3tafbo.png",
-            createdDate: "2018-03-12T13:37:27+00:00",
-            lastUpdatedDate: "2018-03-30T13:37:27+00:00"
+            createdDate: "2012-04-23T18:25:43.511Z",
+            lastUpdatedDate: "2012-04-23T18:25:43.511Z"
         }]
 
         return (

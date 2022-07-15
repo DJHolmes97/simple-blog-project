@@ -1,4 +1,4 @@
-import { Component, Fragment } from 'react';
+import React, { Component, Fragment } from 'react';
 import {
 	Link,
 	BrowserRouter,
@@ -9,62 +9,26 @@ import {
 } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
-import { CommentsBox } from './comments/Sample.jsx';
-import { StyledComponentsDemo } from './styled-components.jsx';
-import { EmotionDemo } from './emotion.jsx';
-import { ReactJssDemo } from './react-jss.jsx';
-import { LazyLoadDemo } from './lazy-load.jsx';
 import BlogPosts from "./BlogPosts/BlogPosts.jsx";
 
-class Navbar extends Component {
-	render() {
-		return (
-			<ul>
-				<li>
-					<Link to="/">Home</Link>
-				</li>
-				<li>
-					<Link to="/comments">Comments Demo</Link>
-				</li>
-				<li>
-					<Link to="/styled-components">Styled Components Demo</Link>
-				</li>
-				<li>
-					<Link to="/react-jss">React-JSS Demo</Link>
-				</li>
-				<li>
-					<Link to="/emotion">Emotion Demo</Link>
-				</li>
-				<li>
-					<Link to="/lazy-load">Lazy loading demo</Link>
-				</li>
-			</ul>
-		);
-	}
-}
 
-class HomePage extends Component {
-	render() {
-		return (
-			<Fragment>
-				<Helmet>
-					<title>ReactJS.NET Demos</title>
-				</Helmet>
-				ReactJS.NET is 🔥🔥
-			</Fragment>
-		);
-	}
-}
+const HomePage = () => (
+	<Fragment>
+		<Helmet>
+			<title>Daniel Holmes Blog</title>
+		</Helmet>
+		ReactJS.NET is 🔥🔥
+		
+		<BlogPosts />
+	</Fragment>
+)
 
 export default class HomeComponent extends Component {
 	render() {
 		const app = (
 			<div className="container">
-				<div className="jumbotron">
-					<h1 className="display-4">.NET Core Sample</h1>
-					<Navbar />
+					<h1 className="display-4">Daniel Holmes Frontend Engineer</h1>
 					<hr className="my-4" />
-					<BlogPosts />
 					<Switch>
 						<Route
 							exact
@@ -72,22 +36,6 @@ export default class HomeComponent extends Component {
 							render={() => <Redirect to="/home" />}
 						/>
 						<Route path="/home" component={HomePage} />
-						<Route
-							path="/comments"
-							component={() => (
-								<CommentsBox
-									initialComments={this.props.initialComments}
-									page={this.props.page}
-								/>
-							)}
-						/>
-						<Route
-							path="/styled-components"
-							component={StyledComponentsDemo}
-						/>
-						<Route path="/react-jss" component={ReactJssDemo} />
-						<Route path="/emotion" component={EmotionDemo} />
-						<Route path="/lazy-load" component={LazyLoadDemo} />
 						<Route
 							path="*"
 							component={({ staticContext }) => {
@@ -98,7 +46,6 @@ export default class HomeComponent extends Component {
 						/>
 					</Switch>
 				</div>
-			</div>
 		);
 
 		if (typeof window === 'undefined') {
